@@ -51,26 +51,22 @@ if response.status_code == 200:
             else:
                 print(f"Failed to retrieve the relative page. Status code: {page_response.status_code}")
 
-# Write the data to a JSON file
-with open('./data/scraped_data.json', 'w', encoding='utf-8') as json_file:
-    json.dump(data_dict, json_file, ensure_ascii=False, indent=4)
-print("Data has been saved to scraped_data.json")
-# Open the file for writing and save the string
-file_path = "./data/scraped_data2.txt"
-with open(file_path, "w", encoding="utf-8") as text_file:
-    text_file.write(str(data_dict))
-
-
 def create_pdf(pdf_directory, pdf_name, pdf_content):
     pdf_path = os.path.join(pdf_directory, pdf_name)
-    c = canvas.Canvas(pdf_path, pagesize=letter)
-    width, height = letter
-    c.drawString(100, height - 100, pdf_content)
-    c.save()
+    doc = SimpleDocTemplate(pdf_path, pagesize=letter)
+    styles = getSampleStyleSheet()
+    story = []
+    formatted_text = Paragraph(pdf_content, styles["Normal"])
+    story.append(formatted_text)
+    doc.build(story)
+
 # Choose the directory where the PDFs will be saved
-output_directory = "./data/"
+output_directory = './data/'
+
 # Create PDFs from the dictionary
 for pdf_name, pdf_content in data_dict.items():
-    pdf_name = pdf_name.split('://')[1].replace('/','-')+'.pdf'
+    print(pdf_name)
+    pdf_name = pdf_name.split('://')[1].replace('/','-').replace('=','').replace('?','').replace('&','')+'.pdf'
     create_pdf(output_directory, pdf_name, pdf_content)
+
 print("PDFs created successfully in the specified directory.")
