@@ -1,0 +1,57 @@
+.popupUpWrapper {
+    position: relative;
+}
+
+.popUpButton {
+    background-color: #e67b00;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.popupUp {
+    position: fixed;
+    inset: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    max-height: 100%;
+}
+
+.popupUpBg {
+    position: fixed;
+    inset: 0px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.popUpModel {
+    position: relative;
+    z-index: 50;
+    background-color: white;
+    border-radius: 0.5rem /* 8px */;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.popUpModelTitle {
+    color: #e67b00;
+    padding-bottom: 0.7rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.popUpMdelDocumentName {
+    padding: 0.2rem 0;
+    text-transform: capitalize;
+}

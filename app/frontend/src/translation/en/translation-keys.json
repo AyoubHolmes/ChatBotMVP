@@ -1,0 +1,27 @@
+{
+    "welcome-message": "Welcome to the Trade ChatBot!",
+    "slogan": "Interact with your data",
+    "clear-chat": "Clear chat",
+    "developer-setting": "Developer settings",
+    "config-title": "Configure Response Generation",
+    "document-popup-button": "Source document",
+    "config-content": {
+        "override-prompt": "Override prompt template",
+        "retrieve-search-result": "Retrieve this many search results:",
+        "exclude-category": "Exclude category",
+        "use-semantic-ranker": "Use semantic ranker for retrieval",
+        "use-query-contextual-summaries": "Use query-contextual summaries instead of whole documents",
+        "suggest-follow-up": "Suggest follow-up questions",
+        "use-oid-security-filter": "Use OID security filter",
+        "use-group-security-filter": "Use groups security filter",
+        "retrieval-mode": "Retrieval mode",
+        "hybrid": "Vectors + Text (Hybrid)",
+        "vectors": "Vectors",
+        "text": "Text",
+        "stream-chat-completion": "Stream chat completion responses",
+        "id-token-claims": "ID Token Claims",
+        "name": "Name",
+        "value": "Value",
+        "close": "Close"
+    }
+}

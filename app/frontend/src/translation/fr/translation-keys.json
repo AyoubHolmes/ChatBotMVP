@@ -1,0 +1,27 @@
+{
+    "welcome-message": "Bienvenue dans le ChatBot Trade !",
+    "slogan": "Intéragissez avec vos données",
+    "clear-chat": "Effacer la discussion",
+    "developer-setting": "Paramètres du développeur",
+    "config-title": "Configurer la génération de réponses",
+    "document-popup-button": "Documents sources",
+    "config-content": {
+        "override-prompt": "Remplacer le modèle de prompt",
+        "retrieve-search-result": "Récupérer autant de résultats de recherche :",
+        "exclude-category": "Exclure la catégorie",
+        "use-semantic-ranker": "Utiliser un classeur sémantique pour la récupération",
+        "use-query-contextual-summeries": "Utiliser des résumés contextuels de la requête au lieu de l'ensemble des documents",
+        "suggest-follow-up": "Suggérer des questions de suivi",
+        "use-oid-security-filter": "Utiliser un filtre de sécurité OID",
+        "use-group-security-filter": "Utiliser un filtre de sécurité de groupe",
+        "retrieval-mode": "Mode de récupération",
+        "hybrid": "Vecteurs + Texte (Hybride)",
+        "vectors": "Vecteurs",
+        "text": "Texte",
+        "stream-chat-completion": "Diffuser les réponses de complétion de chat",
+        "id-token-claims": "Revendications du jeton d'identification",
+        "name": "Nom",
+        "value": "Valeur",
+        "close": "Fermer"
+    }
+}
