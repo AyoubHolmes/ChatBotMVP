@@ -6,6 +6,9 @@ from urllib.parse import urlparse
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import os
+from reportlab.platypus import SimpleDocTemplate
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Paragraph
 
 base_url = "https://www.oc.gov.ma/fr"
 
