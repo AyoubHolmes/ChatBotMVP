@@ -6,9 +6,9 @@ const DocumentsListPopup: React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     return (
         <div className={styles.popupUpWrapper}>
-            <button type="button" className={styles.popUpButton} onClick={() => setIsOpen(true)}>
+            {/* <button type="button" className={styles.popUpButton} onClick={() => setIsOpen(true)}>
                 <FormattedMessage id={"translationKeys.document-popup-button"} />
-            </button>
+            </button> */}
             {isOpen && (
                 <div className={styles.popupUp}>
                     <div onClick={() => setIsOpen(false)} className={styles.popupUpBg}></div>

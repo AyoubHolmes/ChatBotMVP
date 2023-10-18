@@ -25,7 +25,7 @@ const Layout = () => {
                 <header className={styles.header} role={"banner"}>
                     <div className={styles.headerContainer}>
                         <Link to="/" className={styles.headerTitleContainer}>
-                            <h3 className={styles.headerTitle}>BCP | Trade Chatbot</h3>
+                            {/* <h3 className={styles.headerTitle}>BCP | Trade Chatbot</h3> */}
                         </Link>
                         {useLogin && <LoginButton />}
                     </div>
