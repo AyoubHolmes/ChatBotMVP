@@ -1,5 +1,5 @@
 import { Sparkle28Filled } from "@fluentui/react-icons";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo.svg";
 import styles from "./Answer.module.css";
 
 export const AnswerIcon = () => {
