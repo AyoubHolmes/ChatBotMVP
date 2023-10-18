@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Checkbox, Panel, DefaultButton, TextField, SpinButton, Dropdown, IDropdownOption } from "@fluentui/react";
 // import { SparkleFilled } from "@fluentui/react-icons";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo.svg";
 import readNDJSONStream from "ndjson-readablestream";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import styles from "./Chat.module.css";
@@ -374,7 +374,7 @@ const Chat = () => {
                     isBlocking={false}
                     onDismiss={() => setIsConfigPanelOpen(false)}
                     closeButtonAriaLabel="Close"
-                    onRenderFooterContent={() => <DefaultButton onClick={() => setIsConfigPanelOpen(false)}>Close</DefaultButton>}
+                    onRenderFooterContent={() => <DefaultButton onClick={() => setIsConfigPanelOpen(false)}>{intl.formatMessage({ id: "translationKeys.config-content.close" })}</DefaultButton>}
                     isFooterAtBottom={true}
                 >
                     <TextField
@@ -394,7 +394,7 @@ const Chat = () => {
                         defaultValue={retrieveCount.toString()}
                         onChange={onRetrieveCountChange}
                     />
-                    <TextField
+                    {/* <TextField
                         className={styles.chatSettingsSeparator}
                         label={intl.formatMessage({ id: "translationKeys.config-content.exclude-category" })}
                         onChange={onExcludeCategoryChanged}
@@ -469,7 +469,7 @@ const Chat = () => {
                         checked={shouldStream}
                         label={intl.formatMessage({ id: "translationKeys.config-content.stream-chat-completion" })}
                         onChange={onShouldStreamChange}
-                    />
+                    /> */}
                     {useLogin && <TokenClaimsDisplay />}
                 </Panel>
             </div>
