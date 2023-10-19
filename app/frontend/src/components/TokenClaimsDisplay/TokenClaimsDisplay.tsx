@@ -66,7 +66,7 @@ export const TokenClaimsDisplay = () => {
 
     return (
         <div>
-            <Label>
+            {/* <Label>
                 <FormattedMessage id="translationKeys.config-content.id-token-claims" />
             </Label>
             <DataGrid items={items} columns={columns} sortable getRowId={item => item.name}>
@@ -76,7 +76,7 @@ export const TokenClaimsDisplay = () => {
                 <DataGridBody<Claim>>
                     {({ item, rowId }) => <DataGridRow<Claim> key={rowId}>{({ renderCell }) => <DataGridCell>{renderCell(item)}</DataGridCell>}</DataGridRow>}
                 </DataGridBody>
-            </DataGrid>
+            </DataGrid> */}
         </div>
     );
 };
